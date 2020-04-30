@@ -102,7 +102,7 @@ class App extends Component {
     let head = this.state.snakeDots[this.state.snakeDots.length - 1];
     let food = this.state.food;
     console.log("y", food[1]+1)
-    if (head[0] === food[0] && head[1] === food[1] || head[1] === food[1]+1 ) {
+    if (head[0] === food[0] && head[1] === food[1] || head[0] === food[0]+1 && head[1] === food[1]+1  ) {
       this.setState({
         food: getRandomCoordinates()
       })
