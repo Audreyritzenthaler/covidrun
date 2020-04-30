@@ -127,7 +127,7 @@ class App extends Component {
   }
 
   onGameOver() {
-    alert(`TRY AGAIN ! ${this.state.snakeDots.length}`);
+    alert(`TRY AGAIN ! You eat ${this.state.snakeDots.length} couch !`);
     this.setState(initialState)
   }
 
