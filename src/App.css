@@ -20,6 +20,7 @@ body{
     text-align: center;
     padding: 10px 20px;
     white-space: nowrap;
+    color: rgb(31, 31, 31);
 }
 
 img {
@@ -29,7 +30,7 @@ img {
 .header{
     display:flex;
     background-color: #352835;
-    background-image: linear-gradient(90deg, #352835 0%, #88354f 50%, #d8a7a7 100%);    
+    background-image: linear-gradient(225deg, #352835 0%, #88354f 50%, #d8a7a7 100%);    
     height: 10vh;
 }
 

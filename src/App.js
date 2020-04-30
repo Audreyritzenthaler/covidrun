@@ -32,7 +32,7 @@ class App extends React.Component {
       "Loading"
     ) : (
       <div className="App" style={{background:`url(${this.state.image}) no-repeat center` }}>
-         <SideBar right/>
+         <SideBar />
         <Header />
         <Switch>
           <Route exact path="/" component={GameSnake}/>

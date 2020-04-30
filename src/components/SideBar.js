@@ -5,7 +5,7 @@ import './SideBar.css'
 
 export default props => {
   return (
-    <Menu>
+    <Menu right>
         <Link className="linkNav" to='/'> Snake </Link>
         <Link className="linkNav" to='/TicTac'>Tic-Tac-Toe</Link>
         <Link className="linkNav" to='/WCS'>Wild code School</Link>
