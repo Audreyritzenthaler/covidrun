@@ -1,7 +1,9 @@
 import React from "react";
 import axios from "axios";
+import Hackaton from './components/Hackaton'
 import Header from './components/Header'
 import GameSnake from './components/GameSnake'
+import Faq from './components/Faq'
 import Footer from './components/Footer'
 import {Switch,Route} from 'react-router-dom';
 
@@ -32,9 +34,10 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path="/" component={GameSnake}/>
-          <Route to="/TicTac" />
-          <Route to="/WCS" />
-          <Route to="/HACKATON" />
+          {/* <Route to="/TicTac" />
+          <Route to="/WCS" /> */}
+          <Route path="/hackaton" component={Hackaton}/>
+          <Route path="/faq" component={Faq}/>
         </Switch>
         <Footer />
       </div>

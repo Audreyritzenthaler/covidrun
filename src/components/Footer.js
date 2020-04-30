@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom"
 import "./Footer.css";
 
 class Footer extends React.Component {
@@ -20,15 +21,12 @@ componentDidMount(){
   render() {
     return (
       <footer>
-          {this.state.emoticones.map(emo =>{
+          {/* {this.state.emoticones.map(emo =>{
               return <p>{emo.character}</p>
-          })}
-        {/* <ul>
-          <li>Snake</li>
-          <li>Tic-Tac-Toe</li>
-          <li>Wild code School</li>
-          <li>#HACKATON</li>
-        </ul> */}
+          })} */}
+          <ul>
+            <li><Link to="/faq">FAQ</Link></li>
+          </ul>
       </footer>
     );
   }

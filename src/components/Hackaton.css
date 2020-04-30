@@ -1,0 +1,12 @@
+.div-hackaton {
+    width: 50%;
+    margin: 3em auto;
+    padding: 3em;;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 3px;
+    text-align: justify;
+}
+
+.title-hackaton {
+    margin-bottom: 2em;
+}

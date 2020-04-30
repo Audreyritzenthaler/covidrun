@@ -19,6 +19,7 @@ body{
     font-family: 'abril';
     text-align: center;
     padding: 10px 20px;
+    white-space: nowrap;
 }
 
 img {
@@ -39,7 +40,6 @@ img {
 .liNav{
     padding: 20px 30px;
     list-style-type: none;
-    
 }
 
 .linkNav{
