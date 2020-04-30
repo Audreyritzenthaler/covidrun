@@ -1,15 +1,38 @@
+@font-face {
+    font-family: 'abril';
+    src: url("Fonts/AbrilFatface-Regular.ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+ height: 100vh;
+}
+
+.title {
+    font-family: 'abril';
+    text-align: center;
+}
+
 img {
     width: 100%;
 }
 
-.mosaique{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    width: 90%;
-    margin: auto;
+.header{
+    display:flex;
+    background-color:aqua;
 }
 
-.mosaique > div{
-    border: 10px solid rgb(95, 51, 51);
+.ulNav{
+    display:flex;
 }
+
+.liNav{
+    padding: 10px 30px;
+    list-style-type: none;
+    text-decoration: none;
+}
+ 

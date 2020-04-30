@@ -1,0 +1,17 @@
+footer{
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 1rem;
+    background-color: rgb(236, 177, 67);
+    overflow-y: hidden;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 80px;
+    list-style-type: none;
+}

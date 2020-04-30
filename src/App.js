@@ -1,39 +1,42 @@
 import React from "react";
 import axios from "axios";
-
-// import Perso from './components/Perso';
+import Header from './components/Header'
+import GameSnake from './components/GameSnake'
+import Footer from './components/Footer'
+import {Switch,Route} from 'react-router-dom';
 
 import "./App.css";
 
 class App extends React.Component {
   state = {
-    webcamArray: [],
+    image: "https://images.unsplash.com/photo-1588160050429-3c281722cda9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEzMDk5MX0"
   };
 
-  getWebcam = () => {
-    axios
-      .get(
-        "https://api.windy.com/api/webcams/v2/list/orderby=popularity?show=webcams:image,location,player&key=v86LqZILmLPm1rCHTj4eDCcDGKc3Fveq"
-      )
-      .then((res) => this.setState({ webcamArray: res.data.result.webcams }));
-  };
+  // getImage = () => {
+  //   axios
+  //     .get(
+  //       "https://api.unsplash.com/photos/random/?client_id=XsBWrsL88SU3i7ZQBjpURoIiYrVZ04VpNiIUNnJFUfc"
+  //     )
+  //     .then((res) => this.setState({ image: res.data.urls.regular }));
+  // };
 
-  componentDidMount = () => {
-    this.getWebcam();
-  };
+  // componentDidMount = () => {
+  //   this.getImage();
+  // };
 
   render() {
-    // console.log(this.state.webcamArray)
     return this.state.image === null ? (
       "Loading"
     ) : (
-      <div className="App">
-        <img src={this.state.image} alt="" />
-        <div className="mosaique">
-          {this.state.webcamArray && this.state.webcamArray.map((webcam) => {
-            return <div><img src={webcam.image.daylight.preview} alt={webcam.title} /></div>
-          })}
-        </div>
+      <div className="App" style={{background:`url(${this.state.image}) no-repeat center` }}>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={GameSnake}/>
+          <Route to="/TicTac" />
+          <Route to="/WCS" />
+          <Route to="/HACKATON" />
+        </Switch>
+        <Footer />
       </div>
     );
   }
