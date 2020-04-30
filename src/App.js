@@ -9,6 +9,7 @@ import SideBar from "./components/SideBar"
 import Tictactoe from './components/Tictactoe/Tictactoe'
 import {Switch,Route} from 'react-router-dom';
 
+
 import "./App.css";
 
 class App extends React.Component {
@@ -37,7 +38,7 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path="/" component={GameSnake} />
-          <Route path="/Tictactoe"  component={Tictactoe} />
+          <Route path="/TicTac"  component={Tictactoe} />
           {/* <Route path="/WCS" /> */}
           <Route path="/hackaton" component={Hackaton} />
           <Route path="/faq" component={Faq} />
