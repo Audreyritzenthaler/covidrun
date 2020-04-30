@@ -5,6 +5,7 @@ import Header from './components/Header'
 import GameSnake from './components/GameSnake'
 import Faq from './components/Faq'
 import Footer from './components/Footer'
+import Tictactoe from './components/Tictactoe/Tictactoe'
 import {Switch,Route} from 'react-router-dom';
 
 import "./App.css";
@@ -33,11 +34,11 @@ class App extends React.Component {
       <div className="App" style={{background:`url(${this.state.image}) no-repeat center` }}>
         <Header />
         <Switch>
-          <Route exact path="/" component={GameSnake}/>
-          {/* <Route to="/TicTac" />
-          <Route path="/WCS" /> */}
-          <Route path="/hackaton" component={Hackaton}/>
-          <Route path="/faq" component={Faq}/>
+          <Route exact path="/" component={GameSnake} />
+          <Route path="/Tictactoe"  component={Tictactoe} />
+          {/* <Route path="/WCS" /> */}
+          <Route path="/hackaton" component={Hackaton} />
+          <Route path="/faq" component={Faq} />
         </Switch>
         <Footer />
       </div>

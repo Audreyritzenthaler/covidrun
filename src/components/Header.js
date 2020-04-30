@@ -14,7 +14,7 @@ class Header extends React.Component{
                 <nav>
                     <ul className="ulNav">
                         <li className="liNav"><Link className="linkNav" to='/'> Snake </Link></li>
-                        <li className="liNav"><Link className="linkNav" to='/TicTac'>Tic-Tac-Toe</Link></li>
+                        <li className="liNav"><Link className="linkNav" to='/Tictactoe'>Tic-Tac-Toe</Link></li>
                         <li className="liNav"><Link className="linkNav" to='/WCS'>Wild code School</Link></li>
                         <li className="liNav"><Link className="linkNav" to='/HACKATON'>#HACKATON</Link></li>
                     </ul>    
