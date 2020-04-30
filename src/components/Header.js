@@ -19,7 +19,6 @@ class Header extends React.Component{
                         <li className="liNav"><Link className="linkNav" to='/HACKATON'>#HACKATON</Link></li>
                     </ul>    
                 </nav>
-                <SideBar right/>
             </div>
         )
     }
