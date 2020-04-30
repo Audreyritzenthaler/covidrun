@@ -8,6 +8,7 @@ export default (props) => {
     left: `${props.dot[0]}%`,
     top: `${props.dot[1]}%`,
     backgroundImage: `url("https://cdn.shopify.com/s/files/1/2660/5202/products/FE602774_Cabo_Crimson_800x.png?v=1558991140")` 
+
   }
 
   return (
