@@ -15,11 +15,11 @@ class Header extends React.Component{
                     <ul className="ulNav">
                         <li className="liNav"><Link className="linkNav" to='/'> Snake </Link></li>
                         <li className="liNav"><Link className="linkNav" to='/TicTac'>Tic-Tac-Toe</Link></li>
-                    </ul>    
+                    </ul>
                 </nav>
             </div>
-        )
+            )
+        }
     }
-}
-
+  
 export default Header

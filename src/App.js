@@ -6,6 +6,7 @@ import GameSnake from './components/GameSnake'
 import Faq from './components/Faq'
 import Footer from './components/Footer'
 import SideBar from "./components/SideBar"
+import Tictactoe from './components/Tictactoe/Tictactoe'
 import {Switch,Route} from 'react-router-dom';
 
 import "./App.css";
@@ -35,11 +36,11 @@ class App extends React.Component {
          <SideBar />
         <Header />
         <Switch>
-          <Route exact path="/" component={GameSnake}/>
-          {/* <Route to="/TicTac" />
-          <Route path="/WCS" /> */}
-          <Route path="/hackaton" component={Hackaton}/>
-          <Route path="/faq" component={Faq}/>
+          <Route exact path="/" component={GameSnake} />
+          <Route path="/Tictactoe"  component={Tictactoe} />
+          {/* <Route path="/WCS" /> */}
+          <Route path="/hackaton" component={Hackaton} />
+          <Route path="/faq" component={Faq} />
         </Switch>
         <Footer />
       </div>
