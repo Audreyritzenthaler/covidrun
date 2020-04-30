@@ -35,7 +35,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={GameSnake}/>
           {/* <Route to="/TicTac" />
-          <Route to="/WCS" /> */}
+          <Route path="/WCS" /> */}
           <Route path="/hackaton" component={Hackaton}/>
           <Route path="/faq" component={Faq}/>
         </Switch>

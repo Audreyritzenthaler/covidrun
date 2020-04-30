@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import SideBar from "./SideBar";
 
 import '../App.css'
 
@@ -18,7 +19,7 @@ class Header extends React.Component{
                         <li className="liNav"><Link className="linkNav" to='/HACKATON'>#HACKATON</Link></li>
                     </ul>    
                 </nav>
-                
+                <SideBar right/>
             </div>
         )
     }
