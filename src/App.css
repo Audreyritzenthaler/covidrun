@@ -8,13 +8,17 @@
     padding: 0;
 }
 
+body{
+    overflow-y: hidden;
+}
 .App {
- height: 100vh;
+ 
 }
 
 .title {
     font-family: 'abril';
     text-align: center;
+    padding: 10px 20px;
 }
 
 img {
@@ -23,7 +27,9 @@ img {
 
 .header{
     display:flex;
-    background-color:aqua;
+    background-color: #352835;
+    background-image: linear-gradient(90deg, #352835 0%, #88354f 50%, #d8a7a7 100%);    
+    height: 10vh;
 }
 
 .ulNav{
@@ -31,12 +37,15 @@ img {
 }
 
 .liNav{
-    padding: 10px 30px;
+    padding: 20px 30px;
     list-style-type: none;
     
 }
 
-Link{
+.linkNav{
     text-decoration: none;
+    font-family: 'abril';
+    color : black;
+    font-size: 25px;
 }
  

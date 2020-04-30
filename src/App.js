@@ -9,20 +9,20 @@ import "./App.css";
 
 class App extends React.Component {
   state = {
-    image: "https://images.unsplash.com/photo-1588160050429-3c281722cda9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEzMDk5MX0"
+    image: null
   };
 
-  // getImage = () => {
-  //   axios
-  //     .get(
-  //       "https://api.unsplash.com/photos/random/?client_id=XsBWrsL88SU3i7ZQBjpURoIiYrVZ04VpNiIUNnJFUfc"
-  //     )
-  //     .then((res) => this.setState({ image: res.data.urls.regular }));
-  // };
+  getImage = () => {
+    axios
+      .get(
+        "http://www.splashbase.co/api/v1/images/random"
+      )
+      .then((res) => this.setState({ image: res.data.url }));
+  };
 
-  // componentDidMount = () => {
-  //   this.getImage();
-  // };
+  componentDidMount = () => {
+    this.getImage();
+  };
 
   render() {
     return this.state.image === null ? (

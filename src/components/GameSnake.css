@@ -1,8 +1,8 @@
 .game-area {
     position: relative;
-    margin: 50px auto;
+    margin: 2em auto;
     width: 600px;
-    height: 80vh;
+    height: 70vh;
     border: 2px solid #000;
     background-color: rgba(255, 255, 255, 0.8);
   }
@@ -18,9 +18,9 @@
   
   .snake-food {
     position: absolute;
-    width: 2%;
-    height: 2%;
-    background-color: red;
-    border: 1px solid #fff;
+    width: 4%;
+    height: 4%;
+    /* background-color: green; */
+    /* border: 1px solid #fff; */
     z-index: 1;
   }
