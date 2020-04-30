@@ -8,7 +8,7 @@ export default props => {
     <Menu right>
         <Link className="linkNav" to='/'> Snake </Link>
         <Link className="linkNav" to='/TicTac'>Tic-Tac-Toe</Link>
-        <Link className="linkNav" to='/WCS'>Wild code School</Link>
+        <a className="linkNav" href="https://www.wildcodeschool.com/fr-FR" target="_blank">Wild Code School</a>
         <Link className="linkNav" to='/HACKATON'>#HACKATON</Link>
         <Link className="linkNav" to='/faq'>FAQ</Link>
     </Menu>

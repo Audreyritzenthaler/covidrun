@@ -18,6 +18,7 @@ body{
     padding: 10px 20px;
     white-space: nowrap;
     color: rgb(31, 31, 31);
+    display: flex;
 }
 
 img {
@@ -30,7 +31,10 @@ img {
     background-image: linear-gradient(225deg, #352835 0%, #88354f 50%, #d8a7a7 100%);    
     height: 10vh;
 }
-
+.sofa {
+    height: 6vh;
+    width: 6vh
+}
 .ulNav{
     display:flex;
 }
@@ -52,11 +56,3 @@ img {
         display: none;
     }
 }
-/* .App {
-	display: flex;
-	flex-direction: column;
-	min-height: 150vh
-}
- footer {
-    bottom:0;
-}   */

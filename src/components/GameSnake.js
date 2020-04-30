@@ -13,6 +13,7 @@ const getRandomCoordinates = () => {
 }
 
 const initialState = {
+  count: 0,
   food: getRandomCoordinates(),
   speed: 200,
   direction: 'RIGHT',
@@ -53,6 +54,7 @@ class App extends Component {
         this.setState({direction: 'RIGHT'});
         break;
     }
+    this.setState({count: this.state.count + 1}) 
   }
 
   moveSnake = () => {
@@ -101,8 +103,9 @@ class App extends Component {
   checkIfEat() {
     let head = this.state.snakeDots[this.state.snakeDots.length - 1];
     let food = this.state.food;
-    console.log("y", food[1]+1)
-    if (head[0] === food[0] && head[1] === food[1] || head[0]+1 === food[0]+1 && head[1]+1 === food[1]+1  ) {
+    console.log("y food", head[1]+1)
+    console.log("y food", food[1]+1)
+    if (head[0] === food[0] && head[1] === food[1]) {
       this.setState({
         food: getRandomCoordinates()
       })
@@ -135,8 +138,8 @@ class App extends Component {
   render() {
     return (
       <div className="game-area">
-        <Snake snakeDots={this.state.snakeDots}/>
-        <Food dot={this.state.food}/>
+        <Snake  snakeDots={this.state.snakeDots}/>
+        <Food count={this.state.count} dot={this.state.food}/>
       </div>
     );
   }

@@ -20,11 +20,11 @@ li {
     padding: 1em;
 }
 
-a {
+.lili {
     color: rgb(177, 177, 177);
     text-decoration: none;
 }
 
-a:hover {
+.lili:hover {
     color:white;
 }

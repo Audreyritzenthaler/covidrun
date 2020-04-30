@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Board from './Board';
 
 const calculateWinner = (squares) => {
@@ -133,13 +134,9 @@ class Game extends React.Component {
         </div>
         <div className="game-info">
           <div>{status}</div>
-          {/* <button className="buttonTic" onClick={() => this.sortMoves()}>
-            Sort moves
-          </button> */}
           <button className="buttonTic buttonTic--new-game" onClick={() => this.reset()}>
             New game
           </button>
-          {/* <ol className='moves'>{moves}</ol> */}
         </div>
       </div>
     );

@@ -1,14 +1,3 @@
-/* body {
-    font: 24px 'Century Gothic', Futura, sans-serif;
-    margin: 20px;
-  } */
-  
-  /* ol
-  ,ul 
-  {
-    padding-left: 30px;
-  } */
-  
   .morpions{
     display: flex;
     justify-content: center;
@@ -71,17 +60,4 @@
     font-size: 14px;
     cursor: pointer;
   }
-  
-  
-  /* .buttonTic--green {
-    background-color: #4caf50;
-    color: #000;
-    font-weight: bold;
-  }
-  
-  .buttonTic--new-game {
-    background-color: #bb3219;
-    color: #000;
-    font-weight: bold;
-    margin-left: 2px;
-  } */
+ 

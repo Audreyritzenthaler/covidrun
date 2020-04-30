@@ -25,9 +25,9 @@ componentDidMount(){
               return <p>{emo.character}</p>
           })}
           <ul>
-            <li><Link to="/faq">FAQ</Link></li>
-            <li><Link to='/WCS'>Wild code School</Link></li>
-            <li><Link to='/HACKATON'>#HACKATON</Link></li>
+            <li><Link className="lili" to="/faq">FAQ</Link></li>
+            <a className="lili" href="https://www.wildcodeschool.com/fr-FR" target="_blank">Wild Code School</a>
+            <li><Link className="lili" to='/HACKATON'>#HACKATON</Link></li>
           </ul>
       </footer>
     );

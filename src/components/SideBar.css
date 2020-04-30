@@ -1,7 +1,5 @@
 #page-wrap {
     text-align: center;
-  
-    /* Prevent sidebar from showing a scrollbar on page */
     overflow: auto;
   }
   
@@ -19,7 +17,7 @@
     
     /* Change color on hover */
     .bm-item:hover {
-      color: white;
+      color: rgb(133, 133, 133);
     }
     
     /* The rest copied directly from react-burger-menu docs */
@@ -51,7 +49,7 @@
     
     /* General sidebar styles */
     .bm-menu {
-        background-color: white;
+      background-color: white;
       padding: 2.5em 1.5em 0;
       font-size: 2.15em;
     }

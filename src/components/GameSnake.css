@@ -13,13 +13,10 @@
     width: 4%;
     height: 4%;
     background: center / contain no-repeat url("https://image.flaticon.com/icons/svg/2746/2746582.svg") ;
-    /* border: 1px solid #fff; */
     z-index: 2;
   }
 
   .snake-dot:last-of-type{
-    /* background-color: #fff; */
-    /* border: 1px solid #000; */
     background: center / contain no-repeat url("https://image.flaticon.com/icons/svg/2718/2718069.svg");
   }
   
@@ -27,7 +24,5 @@
     position: absolute;
     width: 4%;
     height: 8%;
-    /* background-color: green; */
-    /* border: 1px solid #fff; */
     z-index: 1;
   }

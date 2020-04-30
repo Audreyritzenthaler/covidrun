@@ -1,13 +1,12 @@
 import React from "react";
 
-import sofa from "../Images/sofa.png";
-
 export default (props) => {
   const style = {
     left: `${props.dot[0]}%`,
     top: `${props.dot[1]}%`,
     width: "50px"
   };
+
 
   return (
     <div className="snake-food" style={style}>
@@ -18,15 +17,3 @@ export default (props) => {
     </div>
   );
 };  
-
-
-
-
-
-
-
-
-
-
-
-

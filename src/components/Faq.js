@@ -29,11 +29,8 @@ const data = {
 };
  
 const styles = {
-    // bgColor: 'white',
     titleTextColor: "black",
     rowTitleColor: "grey",
-    // rowContentColor: 'grey',
-    // arrowColor: "red",
 };
  
 export default class App extends Component {
