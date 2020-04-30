@@ -26,3 +26,13 @@
     height: 8%;
     z-index: 1;
   }
+
+  .Score{
+    position: absolute;
+    opacity: 0.5;
+    color: rgb(165, 165, 165);
+    font-size: 30rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

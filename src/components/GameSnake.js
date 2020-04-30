@@ -15,7 +15,7 @@ const getRandomCoordinates = () => {
 const initialState = {
   count: 0,
   food: getRandomCoordinates(),
-  speed: 200,
+  speed: 50,
   direction: 'RIGHT',
   snakeDots: [
     [0,0],
@@ -28,6 +28,7 @@ class App extends Component {
   state = initialState;
 
   componentDidMount() {
+    
     setInterval(this.moveSnake, this.state.speed);
     document.onkeydown = this.onKeyDown;
   }
@@ -103,14 +104,18 @@ class App extends Component {
   checkIfEat() {
     let head = this.state.snakeDots[this.state.snakeDots.length - 1];
     let food = this.state.food;
-    console.log("y food", head[1]+1)
-    console.log("y food", food[1]+1)
+    
     if (head[0] === food[0] && head[1] === food[1]) {
       this.setState({
         food: getRandomCoordinates()
       })
       this.enlargeSnake();
-      this.increaseSpeed();
+      // this.increaseSpeed();
+      // if(this.state.snakeDots.length-2 > 2 && this.state.snakeDots.length-2 < 5){
+      //   this.setState({speed: this.state.speed - 10})
+      //   setInterval(this.moveSnake, this.state.speed);
+      //   console.log(this.state.speed)
+      // }
     }
   }
 
@@ -123,21 +128,25 @@ class App extends Component {
   }
 
   increaseSpeed() {
-    if (this.state.speed > 10) {
-      this.setState({
-        speed: this.state.speed - 10
-      })
-    }
+    // if (this.state.snakeDots.length - 2 === 4) {
+    //   console.log(this.state.snakeDots.length-2)
+    //   this.setState({
+    //     speed: this.state.speed - 20
+    //   })
+    // }
   }
 
   onGameOver() {
     alert(`TRY AGAIN ! You covided ${this.state.snakeDots.length - 2} humans !`);
     this.setState(initialState)
+
   }
 
   render() {
+    // this.setState({speed: this.state.speed * this.state.snakeDots.length - 1})
     return (
       <div className="game-area">
+        <p className="Score">{this.state.snakeDots.length - 2}</p>
         <Snake  snakeDots={this.state.snakeDots}/>
         <Food count={this.state.count} dot={this.state.food}/>
       </div>
