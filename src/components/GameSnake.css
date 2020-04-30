@@ -10,22 +10,23 @@
 
   .snake-dot {
     position: absolute;
-    width: 2%;
-    height: 2%;
-    background-color: #000;
-    border: 1px solid #fff;
+    width: 4%;
+    height: 4%;
+    background: center / contain no-repeat url("https://cdn.pixabay.com/photo/2020/04/29/07/54/coronavirus-5107715_960_720.png") ;
+    /* border: 1px solid #fff; */
     z-index: 2;
   }
 
-  .snake-dot:first-of-type{
-    background-color: red;
-
+  .snake-dot:last-of-type{
+    /* background-color: #fff; */
+    /* border: 1px solid #000; */
+    background: center / contain no-repeat url("https://lh3.googleusercontent.com/proxy/ygTTBrksGZZbULEfL0oNRmkqVFbNa5qS4p_udrABv4rzKvfi2475NORyfIsornfRKwuBMX00LOk89_6D9bvXLV3WNkRnWpWOcLuT5pC4pwJ0-XtfGvVU5At4uDNmApc");
   }
   
   .snake-food {
     position: absolute;
     width: 4%;
-    height: 4%;
+    height: 8%;
     /* background-color: green; */
     /* border: 1px solid #fff; */
     z-index: 1;

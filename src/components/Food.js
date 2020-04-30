@@ -12,12 +12,12 @@ export default (props) => {
   return (
     <div className="snake-food" style={style}>
       <img
-        src="https://lh3.googleusercontent.com/proxy/4YREvtJrKOO09a0eaWmhp4yHYy0xrUcJx_N-uI_0Wndx25eKmv_A1IfbUZuLunVZGOHBeM1_Z5K_i0W2W9CcwWG5NOg5fYIy"
-        style={style} alt=""
+        src="https://image.flaticon.com/icons/svg/1057/1057335.svg"
+        style={style} alt="avatar-couch"
       />
     </div>
   );
-};
+};  
 
 
 

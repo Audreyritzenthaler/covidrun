@@ -11,9 +11,6 @@
 body{
     overflow-y: hidden;
 }
-.App {
- 
-}
 
 .title {
     font-family: 'abril';
@@ -55,3 +52,11 @@ img {
         display: none;
     }
 }
+/* .App {
+	display: flex;
+	flex-direction: column;
+	min-height: 150vh
+}
+ footer {
+    margin-top:auto
+}   */

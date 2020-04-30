@@ -10,6 +10,7 @@ export default props => {
         <Link className="linkNav" to='/TicTac'>Tic-Tac-Toe</Link>
         <Link className="linkNav" to='/WCS'>Wild code School</Link>
         <Link className="linkNav" to='/HACKATON'>#HACKATON</Link>
+        <Link className="linkNav" to='/faq'>FAQ</Link>
     </Menu>
   );
 };

@@ -6,7 +6,7 @@ import './GameSnake.css'
 
 const getRandomCoordinates = () => {
   let min = 1;
-  let max = 98;
+  let max = 90;
   let x = Math.floor((Math.random()*(max-min+1)+min)/2)*2;
   let y =  Math.floor((Math.random()*(max-min+1)+min)/2)*2;
   return [x,y]
@@ -18,7 +18,7 @@ const initialState = {
   direction: 'RIGHT',
   snakeDots: [
     [0,0],
-    [2,0]
+    [2,0],
   ]
 }
 
@@ -127,7 +127,7 @@ class App extends Component {
   }
 
   onGameOver() {
-    alert(`TRY AGAIN ! You eat ${this.state.snakeDots.length} couch !`);
+    alert(`TRY AGAIN ! You covided ${this.state.snakeDots.length} humans !`);
     this.setState(initialState)
   }
 
