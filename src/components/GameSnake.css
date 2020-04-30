@@ -12,7 +12,7 @@
     position: absolute;
     width: 4%;
     height: 4%;
-    background: center / contain no-repeat url("https://cdn.pixabay.com/photo/2020/04/29/07/54/coronavirus-5107715_960_720.png") ;
+    background: center / contain no-repeat url("https://image.flaticon.com/icons/svg/2746/2746582.svg") ;
     /* border: 1px solid #fff; */
     z-index: 2;
   }
@@ -20,7 +20,7 @@
   .snake-dot:last-of-type{
     /* background-color: #fff; */
     /* border: 1px solid #000; */
-    background: center / contain no-repeat url("https://lh3.googleusercontent.com/proxy/ygTTBrksGZZbULEfL0oNRmkqVFbNa5qS4p_udrABv4rzKvfi2475NORyfIsornfRKwuBMX00LOk89_6D9bvXLV3WNkRnWpWOcLuT5pC4pwJ0-XtfGvVU5At4uDNmApc");
+    background: center / contain no-repeat url("https://image.flaticon.com/icons/svg/2718/2718069.svg");
   }
   
   .snake-food {
