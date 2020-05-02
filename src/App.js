@@ -13,27 +13,28 @@ import {Switch,Route} from 'react-router-dom';
 import "./App.css";
 
 class App extends React.Component {
-  state = {
-    image: null
-  };
+  // state = {
+  //   image: null
+  // };
 
-  getImage = () => {
-    axios
-      .get(
-        "http://www.splashbase.co/api/v1/images/random"
-      )
-      .then((res) => this.setState({ image: res.data.url }));
-  };
+  // getImage = () => {
+  //   axios
+  //     .get(
+  //       "http://www.splashbase.co/api/v1/images/random"
+  //     )
+  //     .then((res) => this.setState({ image: res.data.url }));
+  // };
 
-  componentDidMount = () => {
-    this.getImage();
-  };
+  // componentDidMount = () => {
+  //   this.getImage();
+  // };
 
   render() {
-    return this.state.image === null ? (
-      "Loading"
-    ) : (
-      <div className="App" style={{background:`url(${this.state.image}) no-repeat center` }}>
+    // return this.state.image === null ? (
+    //   "Loading"
+    // ) : (
+      return(
+        <div className="App">
          <SideBar />
         <Header />
         <Switch>
@@ -44,8 +45,10 @@ class App extends React.Component {
         </Switch>
         <Footer />
       </div>
-    );
+    // );
+      )
   }
+      
 }
 
 export default App;

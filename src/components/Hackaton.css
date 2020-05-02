@@ -8,5 +8,9 @@
 }
 
 .title-hackaton {
-    margin-bottom: 2em;
+    margin-bottom: 2.9em;
+}
+
+.div-hackaton > p {
+    line-height: 2.5em;
 }

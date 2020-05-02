@@ -19,7 +19,7 @@ const data = {
         },
         {
             title: "Vous avez galéré ?",
-            content: `Franchement ? Ne codez jamais en React Native`,
+            content: `Franchement ? Ne vous mettez pas sur React Native en hackaton de 24h quand vous n'y avez encore jamais touché :')`,
         },
         {
             title: "What is the package version",
