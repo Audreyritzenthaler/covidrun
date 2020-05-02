@@ -7,9 +7,9 @@ import './GameSnake.css'
 const getRandomCoordinates = () => {
   let min = 1;
   let max = 90;
-  let x1 = Math.floor((Math.random()*(max-min+1)+min)/2)*2;
-  let y1 =  Math.floor((Math.random()*(max-min+1)+min)/2)*2;
-  return [x1, x2]
+  let x = Math.floor((Math.random()*(max-min+0)+min)/2)*2;
+  let y =  Math.floor((Math.random()*(max-min+1)+min)/2)*2;
+  return [x,y]
 }
 
 const initialState = {
