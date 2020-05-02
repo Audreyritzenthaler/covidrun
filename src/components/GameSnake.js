@@ -7,15 +7,15 @@ import './GameSnake.css'
 const getRandomCoordinates = () => {
   let min = 1;
   let max = 90;
-  let x = Math.floor((Math.random()*(max-min+1)+min)/2)*2;
-  let y =  Math.floor((Math.random()*(max-min+1)+min)/2)*2;
-  return [x,y]
+  let x1 = Math.floor((Math.random()*(max-min+1)+min)/2)*2;
+  let y1 =  Math.floor((Math.random()*(max-min+1)+min)/2)*2;
+  return [x1, x2]
 }
 
 const initialState = {
   count: 0,
   food: getRandomCoordinates(),
-  speed: 50,
+  speed: 60,
   direction: 'RIGHT',
   snakeDots: [
     [0,0],
