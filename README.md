@@ -2,7 +2,7 @@ Et voilà ! Après 24h de programmation, 0 heure de sommeil et beaucoup de monst
 
 Un hackaton très drôle avec une équipe au top ; Emily DEAT, Auxence Blondel,  Aurélien WALLART-JOUBERT, Tadatoshi MIURA,  Jean Philippe Gerard,  Céline Cottier  et Helder Fernandes soares.
 
-![40% center](https://imgur.com/a/DLPA1gB)
+![portrait](https://imgur.com/a/DLPA1gB)
 
 
 
