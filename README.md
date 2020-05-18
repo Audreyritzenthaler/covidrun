@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Et voilà ! Après 24h de programmation, 0 heure de sommeil et beaucoup de monster, je vous présente notre application "CovidRun" ! Une app contenant deux jeux : un snake et un tic-tac-toe sur le thème du Covid ! :)
+
+Un hackaton très drôle avec une équipe au top ; Emily DEAT, Auxence Blondel,  Aurélien WALLART-JOUBERT, Tadatoshi MIURA,  Jean Philippe Gerard,  Céline Cottier  et Helder Fernandes soares.
+
+### Le projet est visible ici : https://master--elegant-hypatia-f05ed3.netlify.app/
+
 
 ## Available Scripts
 
