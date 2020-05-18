@@ -2,6 +2,10 @@ Et voilà ! Après 24h de programmation, 0 heure de sommeil et beaucoup de monst
 
 Un hackaton très drôle avec une équipe au top ; Emily DEAT, Auxence Blondel,  Aurélien WALLART-JOUBERT, Tadatoshi MIURA,  Jean Philippe Gerard,  Céline Cottier  et Helder Fernandes soares.
 
+![40% center](covid_hackaton_2020.png.jpg)
+
+
+
 ### Le projet est visible ici : https://master--elegant-hypatia-f05ed3.netlify.app/
 
 
